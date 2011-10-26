@@ -18,8 +18,8 @@ public class Employee {
         this.job = job;
         this.salary = salary;
     }
-    public void saveEmployee(String fileName) throws FileNotFoundException
-    {
+    public void saveEmployee(String fileName) throws FileNotFoundException//ne e li po-dobre da vryshtash boolean i 
+    {// realno da hvyrlqsh exeptions
         File file = new File(fileName);
         FileOutputStream out = new FileOutputStream(file, true);
         PrintWriter write = new PrintWriter(out);
